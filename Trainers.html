@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trainers</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+
+</head>
+<style>
+    #bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        min-height: 100%;
+        opacity: 0.3;
+    }
+
+    #table1 {
+        background-color: lightblue;
+
+    }
+</style>
+
+<body>
+    <img id="bg" src="./imgTrainers.png" alt="">
+    <div id="container">
+        <header class="jumbotron text-center">
+            <h1>Bootcamp Trainers</h1>
+            <p>Designing Responsive Web Sites</p>
+        </header>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse" id="collapsibleNavbar">
+
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Uni-Form.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="students.html">Students</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Trainers.html">Trainers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Assignments.html">Assignments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Assignment-course-student.html">Asgmts/Course/Students </a>
+                    </li>
+                </ul>
+            </div>
+        </nav> <!-- End of Navigation -->
+        <div class="col-sm-6">
+            <table id="table1" class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Course Name</th>
+                        <th>List of Trainers</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CSS & HTML:</td>
+                        <td>Vaggelis Papas</td>
+                        <td>Angelos Kovatsis</td>
+                        <td>Andreas Bourzoukos</td>
+                    </tr>
+                    <tr>
+                        <td>Bootstrap:</td>
+                        <td>Giorgos Azakas</td>
+                        <td>Efi Gavrielatou</td>
+                        <td>Charalampos Veraros</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript:</td>
+                        <td>Ioannis-Panagiotis Poikilidis</td>
+                        <td>Evangelos Kolokotronis</td>
+                        <td>Roman Hagos</td>
+                    </tr>
+                    <tr>
+                        <td>Java:</td>
+                        <td>George Karatzas</td>
+                        <td>Antonis Katsakos</td>
+                        <td>Dimitris Moutzourhs</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="row my-5">
+            <div class="col-sm-2">
+                <div class="form-group">
+                    <select class="selectpicker form-control">
+                        <option>CSS & HTML</option>
+                        <option>--</option>
+                    </select>
+                    <select class="selectpicker form-control">
+                        <option>Vaggelis Papas</option>
+                        <option>Angelos Kovatsis</option>
+                        <option>Andreas Bourzoukos</option>
+                        <option>--</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="form-group">
+                    <select class="selectpicker form-control">
+                        <option>Bootstrap</option>
+                        <option>--</option>
+                    </select>
+                    <select class="selectpicker form-control">
+                        <option>Giorgos Azakas</option>
+                        <option>Efi Gavrielatou</option>
+                        <option>Charalampos Veraros</option>
+                        <option>--</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary" onclick="alertFun()">Add</button>
+            </div>
+            <div class="col-sm-2">
+                <div class="form-group">
+                    <select class="selectpicker form-control">
+                        <option>JavaScript</option>
+                        <option>--</option>
+                    </select>
+                    <select class="selectpicker form-control">
+                        <option>Ioannis-Panagiotis Poikilidis</option>
+                        <option>Evangelos Kolokotronis</option>
+                        <option>Roman Hagos</option>
+                        <option>--</option>
+                    </select>
+
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="form-group">
+                    <select class="selectpicker form-control">
+                        <option>Java</option>
+                        <option>--</option>
+                    </select>
+                    <select class="selectpicker form-control">
+                        <option>George Karatzas</option>
+                        <option>Antonis Katsakos</option>
+                        <option>Dimitris Moutzourhs</option>
+                        <option>--</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Edit</button>
+            </div>
+        </div>
+        <footer class="jumbotron text-center my-5">
+            <p>Copyright (c) 2021 rMar Programming</p>
+        </footer>
+    </div> <!-- End of Container-->
+    <script>
+        function alertFun() {
+            alert("Trainer and Course submited!")
+        }
+    </script>
+</body>
+
+</html>
